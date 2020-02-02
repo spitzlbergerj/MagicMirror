@@ -260,6 +260,8 @@ if $NPM_INSTALL; then
 	echo -e "\e[92mnpm installation Done! version=V$(npm -v)\e[0m" | tee -a $logfile
 fi
 
+exit 1
+
 # Install MagicMirror
 cd ~
 if [ $doInstall == 1 ]; then
